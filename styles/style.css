@@ -22,11 +22,6 @@ header{
     display: block;
 }
 
-/* #header-container{
-    background-color: var(--bg-color-1);
-    display: block;
-
-} */
 /* navbar */
 .container{
     width: 75%;
@@ -66,11 +61,8 @@ header{
 
 }
 
+
 .btn{
-
-}
-
-.btn button{
     padding: 12.5px 16px;
     font-size: 16px;
     font-weight: 600;
@@ -87,25 +79,75 @@ header{
 
 #hero-section{
     background: url(../assets/hero-bg.png) no-repeat center/cover;
+    padding: 100px 0;
     
 
 }
 
 .hero-container h2, p{
     color: var(--primary-color);
+    text-align: center;
+
 
 }
+
+.hero-content h2{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 8px;
+
+}
+
+.hero-content p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+
+}
+
 
 .hero-mic{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 40px;
 
 }
 .hero-mic .mic{
 
     position: absolute;
-    left: 48%;
+    left: 50%;
     transform: translate(-50%);
+}
+
+.new{
+    position: absolute;
+    left: 62%;
+    top: 10%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    background-color: var(--secondery-color);
+    border: none;
+
+}
+
+.mail-btn{
+    border: 1px solid var(--secondery-color);
+    background-color: transparent;
+    color: var(--secondery-color);
+    border-radius: 1000px;
+    padding: 8px 16px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
 }
