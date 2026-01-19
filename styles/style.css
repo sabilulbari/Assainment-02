@@ -26,7 +26,9 @@ header{
 .container{
     width: 75%;
     margin: 0 auto;
-
+}
+.bcg{
+    background-color: var(--bg-color-1);
 }
 .navbar{
     display: flex;
@@ -98,13 +100,6 @@ header{
 
 }
 
-.hero-content p{
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 24px;
-
-}
-
 
 .hero-mic{
     display: flex;
@@ -150,4 +145,57 @@ header{
     gap: 8px;
     align-items: center;
     justify-content: center;
+}
+
+/* heros-ection-end */
+
+/* about-us-section */
+
+.about-heading{
+    align-items: center;
+    text-align: center;
+}
+
+.heding-3{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 16px;
+}
+
+.heding-4{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 16px 0;
+}
+
+.pera{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
+.about-rating{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 80px;
+    padding-bottom: 120px;
+}
+
+.rating-card{
+    color: var(--secondery-color);
+    /* width: 240px; */
+    align-items: center;
+    text-align: center;
+    padding: 80px 0 120px 0;
+
+
+}
+
+.rating-card h4{
+    font-size: 48px;
+    font-weight: 900;
 }
