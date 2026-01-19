@@ -7,7 +7,7 @@
     --secondery-color: #00FF88;
     --bg-color-1: #1A0B2E;
     --bg-color-2: #230E3D;
-    --bg-color-3: #351165;
+    --bg-color-3: #35116549;
     --bg-color-4: #250D44;
     --bg-gradiant:var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
      --bg-gradiant-varticle:var(--Linear, linear-gradient(0deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -162,6 +162,7 @@ header{
     font-weight: 700;
     padding-top: 50px;
     padding-bottom: 16px;
+    text-align: center;
 }
 
 .heding-4{
@@ -172,6 +173,7 @@ header{
 }
 
 .pera{
+    color: #ffffff98;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
@@ -198,4 +200,47 @@ header{
 .rating-card h4{
     font-size: 48px;
     font-weight: 900;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 120px;
+}
+
+.normarl{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.medium{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.nm{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+.bcg2{
+    background-color: var(--bg-color-2);
+}
+
+.app-box{
+    background-color: var(--bg-color-3);
+    border-radius: 40px;
+    padding: 40px;
+
+}
+ 
+.app-box p{
+    text-align: left;
+}
+.app-section h3{
+    padding-top: 130px;
+    padding-bottom: 40px;
 }
