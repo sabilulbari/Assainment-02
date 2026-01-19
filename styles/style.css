@@ -87,10 +87,25 @@ header{
 
 #hero-section{
     background: url(../assets/hero-bg.png) no-repeat center/cover;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* margin-top: 92px; */
+    
 
+}
+
+.hero-container h2, p{
+    color: var(--primary-color);
+
+}
+
+.hero-mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.hero-mic .mic{
+
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%);
 }
