@@ -177,7 +177,7 @@ header{
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
-    line-height: 20px;
+    line-height:35px;
 }
 
 .about-rating{
@@ -243,4 +243,105 @@ header{
 .app-section h3{
     padding-top: 130px;
     padding-bottom: 40px;
+}
+
+.vid-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card{
+    background-color: var(--bg-color-4);
+    border-radius: 30px;
+
+}
+
+.card iframe{
+    width: 100%;
+    border: none;
+    border-radius: 30px 30px 0 0;
+}
+
+.card-heading{
+    padding: 24px;
+}
+
+
+.card p{
+    text-align: left;
+}
+
+.feature-section h2{
+    background-color: var(--primary-color);
+
+}
+
+.feature-section{
+    padding-bottom: 120px;
+}
+
+.time{
+    color: var(--secondery-color);
+}
+
+.chalange{
+    padding-bottom: 120px;
+}
+
+.chalange-card{
+    display: flex;
+    background-color: var(--bg-color-4);
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.image{
+    margin-right: 24px;
+
+}
+
+.chalenge-heading p{
+    text-align: left;
+}
+
+
+footer{
+    background: url(../assets/footer-bg.png) no-repeat center/cover ;
+}
+
+.social-link span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #533C72;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+#footer h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+.footer-content{
+    padding: 120px 0;
+}
+
+.link{
+    margin: 32px 0;
+    color: var(--primary-color);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+.link i{
+    margin-l
 }
