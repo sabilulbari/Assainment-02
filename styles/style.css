@@ -461,6 +461,20 @@ footer{
         padding: 0;
     }
 
+      /* app section */
+   .app{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 16px;
+  }
+  .heding-3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .normarl, .medium, .nm{
+    grid-column: auto;
+    grid-row: auto;
+  }
 
 }
 
