@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Wave</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #FFFFFF;
+    --secondery-color: #00FF88;
+    --bg-color-1: #1A0B2E;
+    --bg-color-2: #230E3D;
+    --bg-color-3: #35116549;
+    --bg-color-4: #250D44;
+    --bg-gradiant:var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+     --bg-gradiant-varticle:var(--Linear, linear-gradient(0deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+
+}
+
+.open-inter{
+  font-family: "Open Sans", sans-serif;
+}
+header{
+    background-color: var(--bg-color-1);
+    display: block;
+}
+
+/* navbar */
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+.bcg{
+    background-color: var(--bg-color-1);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+
+}
+
+.logo{
+    color: var(--primary-color);
+}
+
+.grdnt{
+    background: var(--bg-gradiant-varticle);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a{
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+
+.btn{
+    padding: 12.5px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10000px;
+    border: none;
+    color: var(--primary-color);
+    background: var(--bg-gradiant);
+    cursor: pointer;
+}
+
+/* navbar-end */
+
+/* hero-part-star */
+
+#hero-section{
+    background: url(../assets/hero-bg.png) no-repeat center/cover;
+    padding: 100px 0;
+    
+
+}
+
+.hero-container h2, p{
+    color: var(--primary-color);
+    text-align: center;
+
+
+}
+
+.hero-content h2{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 8px;
+
+}
+
+
+.hero-mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.hero-mic .mic{
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mic{
+    position: relative;
+}
+
+.new{
+    position: absolute;
+    top: -50px;
+    right: -130px;    
+
+} 
+.new_btn{
+ font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    background-color: var(--secondery-color);
+    border: none;
+}
+
+.mail-btn{
+    border: 1px solid var(--secondery-color);
+    background-color: transparent;
+    color: var(--secondery-color);
+    border-radius: 1000px;
+    padding: 8px 16px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body class="open-inter">
+    <header>
+            <div id="header-container">
+                <nav class="navbar container">
+                    <div class="logo">
+                        <h2>Tech <span class="grdnt">Wave</span></h2>
+                    </div>
+                        <ul class="nav-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Episodes</a></li>
+                        <li><a href="#">Host</a></li>
+                        </ul>
+                    <div class="btn-suscribe">
+                        <a href="#" class="subscribe-btn"><button class="btn">Subscribe <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </nav>
+            </div>
+            <section id="hero-section">
+                <div class="hero-container container">
+                    <div class="hero-content" >
+                        <div class="hero-mic ">
+                             <span><img src="./assets/hero-circle.png" alt="image"></span>
+                             <span class="mic"> <img src="./assets/microphone.png" alt="microphone">
+                                <span class="new"> <button class="new_btn">NEW</button></span>
+                            </span> 
+                             
+                        </div>
+                        <h2>TechWave</h2>
+                        <p class="pera">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    </div>
+                    <div class="hero-btn">
+                        <button class="btn"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                        <button class="mail-btn"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                    </div>
+                </div>
+            </section>
+    </header>

@@ -116,17 +116,24 @@ header{
     transform: translate(-50%);
 }
 
+.mic{
+    position: relative;
+}
+
 .new{
     position: absolute;
-    left: 62%;
-    top: 10%;
-    font-size: 18px;
+    top: -50px;
+    right: -120px;
+    transform: translate(-40%);
+    
+
+} .new_btn{
+ font-size: 18px;
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 1000px;
     background-color: var(--secondery-color);
     border: none;
-
 }
 
 .mail-btn{
@@ -340,8 +347,4 @@ footer{
     gap: 40px;
     justify-content: center;
     
-}
-
-.link i{
-    margin-l
 }
