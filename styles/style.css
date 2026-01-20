@@ -476,5 +476,45 @@ footer{
     grid-row: auto;
   }
 
+    /* featured videos */
+  .feature-section{
+    padding-bottom: 30px;
+  }
+
+  .vid-card{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  
+
+  /* host section */
+  .chalange{
+
+  }
+
+  .chalange-card{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .chalenge-heading p{
+    text-align: center;
+
+  }
+
+  .chalenge-heading p br{
+    display: none;
+  }
+
+  .chalange-card img{
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  
 }
 
