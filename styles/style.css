@@ -379,28 +379,88 @@ footer{
 @media (max-width: 576px) {
     /* hamburger */
     .subscribe-btn, .nav-links{
-    display: none;
+        display: none;
   }
 
     .hamburger{
-    display: block;
+        display: block;
   }
 
-  .navbar{
-    display: flex;
-    justify-content: space-between;
+     .navbar{
+         display: flex;
+         justify-content: space-between;
+  }
+
+ .logo h2{
+    transform: scale(0.60);
   }
 
   /* container */
-  .container{
-    width: 90%;
+     .container{
+         width: 90%;
   }
 
   /* hero-section */
 
-  #hero-section{
-    padding: 60px 0;
+    #hero-section{
+        padding: 60px 0;
   }
+
+
+    .hero-content h2{
+        font-size: 40px;
+  }
+
+    .hero-content .pera{
+    /* font-size: 14px; */
+        line-height: 1.4em;
+  }
+
+  /* hero mic */
+    .hero-mic img{
+        max-width: 220px;
+  }
+
+     .hero-mic .mic img{
+        max-width: 90px;
+  }
+
+    .new{
+        top: -20px;
+        right: -75px;
+        transform: scale(0.70);
+  }
+
+  /* hero buttons */
+   .hero-btn{
+        /* flex-direction: column;
+        gap: 12px; */
+  }
+
+    .hero-btn button{
+        /* width: 100%; */
+        justify-content: center;
+  }
+
+   /* abaout-heading */
+   .about-heading{
+    border-bottom: 1px solid #533C72;
+   }
+      /* about rating */
+    .about-rating{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .about-rating{
+        padding-top: 40px;
+    }
+
+    .rating-card{
+        padding: 0;
+    }
+
 
 }
 
