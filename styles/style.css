@@ -22,6 +22,11 @@ header{
     display: block;
 }
 
+#header-container{
+    border-bottom: 1px solid #533C72;
+
+}
+
 /* navbar */
 .container{
     width: 75%;
@@ -42,6 +47,10 @@ header{
     color: var(--primary-color);
 }
 
+.logo h2{
+    font-size: 48px;
+    font-weight: 800;
+}
 .grdnt{
     background: var(--bg-gradiant-varticle);
     -webkit-background-clip: text;
@@ -73,6 +82,17 @@ header{
     color: var(--primary-color);
     background: var(--bg-gradiant);
     cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hover-effect:hover{
+    border: #00FF88;
+    transform: translate-z(10px);
+
 }
 
 /* navbar-end */
@@ -161,6 +181,12 @@ header{
 .about-heading{
     align-items: center;
     text-align: center;
+}
+
+.heding-2{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
 
 .heding-3{
@@ -318,8 +344,8 @@ footer{
 }
 
 .social-link span{
-    width: 40px;
-    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     border: 1px solid #533C72;
     align-items: center;
@@ -348,3 +374,33 @@ footer{
     justify-content: center;
     
 }
+
+
+@media (max-width: 576px) {
+    /* hamburger */
+    .subscribe-btn, .nav-links{
+    display: none;
+  }
+
+    .hamburger{
+    display: block;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* container */
+  .container{
+    width: 90%;
+  }
+
+  /* hero-section */
+
+  #hero-section{
+    padding: 60px 0;
+  }
+
+}
+
