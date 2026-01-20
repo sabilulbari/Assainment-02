@@ -181,6 +181,7 @@ header{
 .about-heading{
     align-items: center;
     text-align: center;
+    border-bottom: 1px solid #533C72;
 }
 
 .heding-2{
@@ -446,6 +447,9 @@ footer{
    .about-heading{
     border-bottom: 1px solid #533C72;
    }
+   .about-heading p br{
+    display: none;
+   }
       /* about rating */
     .about-rating{
       display: grid;
@@ -466,6 +470,10 @@ footer{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 16px;
+  }
+
+  .app-box p br{
+    display: none;
   }
   .heding-3{
     font-size: 32px;
@@ -523,6 +531,8 @@ footer{
     flex-wrap: wrap;
     padding: 72px;
     gap: 40px;
+    margin: 0;
+    padding: 24px 72px;
   }
 
   .link span i{
