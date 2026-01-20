@@ -514,7 +514,22 @@ footer{
     width: 200px;
     margin: 0 auto;
   }
+  /* footer-section */
+  .footer-content{
+    padding: 40px 20px;
+  }
 
-  
+  .link{
+    flex-wrap: wrap;
+    padding: 72px;
+    gap: 40px;
+  }
+
+  .link span i{
+    /* width: 100px; */
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
