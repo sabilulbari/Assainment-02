@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 :root {
     --primary-color: #FFFFFF;
@@ -45,6 +46,7 @@ header{
 
 .logo{
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .logo h2{
@@ -60,11 +62,19 @@ header{
 .nav-links{
     display: flex;
     gap: 32px;
+    list-style: none;
+    transition: all 1s;
+}
+
+.nav-links  a:hover{
+    border-bottom: 1px solid #FFFFFF;
+    transform: scale(1.4);
+    
 }
 
 .nav-links a{
     color: var(--primary-color);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
@@ -82,18 +92,26 @@ header{
     color: var(--primary-color);
     background: var(--bg-gradiant);
     cursor: pointer;
+    transition: all 1s;
+
+    
 }
+
+.btn:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+
+}
+
+
+
 
 .hamburger{
     display: none;
     cursor: pointer;
 }
 
-.hover-effect:hover{
-    border: #00FF88;
-    transform: translate-z(10px);
 
-}
 
 /* navbar-end */
 
@@ -145,26 +163,55 @@ header{
     top: -50px;
     right: -120px;
     transform: translate(-40%);
-    
+    animation: jump 1.8s ease-in-out infinite;
 
-} .new_btn{
- font-size: 18px;
+} 
+
+@keyframes jump{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(20deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.new_btn{
+    font-size: 18px;
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 1000px;
     background-color: var(--secondery-color);
     border: none;
+    transition: all 1s;
+
 }
+
+.new_btn:hover{
+    transform: scale(1.2);}
 
 .mail-btn{
     border: 1px solid var(--secondery-color);
     background-color: transparent;
     color: var(--secondery-color);
     border-radius: 1000px;
-    padding: 8px 16px;
+    padding: 12.5px 16px;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.mail-btn:hover{
+    color: var(--primary-color);
+    background: var(--bg-gradiant);
+    border: 1px solid #1A0B2E;
 }
 
 .hero-btn{
@@ -223,7 +270,6 @@ header{
 
 .rating-card{
     color: var(--secondery-color);
-    /* width: 240px; */
     align-items: center;
     text-align: center;
     padding: 80px 0 120px 0;
@@ -268,7 +314,13 @@ header{
     background-color: var(--bg-color-3);
     border-radius: 40px;
     padding: 40px;
+    transition: all 1s;
 
+
+}
+
+.app-box:hover{
+    transform: scale(1.05);
 }
  
 .app-box p{
@@ -351,6 +403,15 @@ footer{
     border: 1px solid #533C72;
     align-items: center;
     color: var(--primary-color);
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.social-link span:hover{
+    border: 1px solid red;
+    transform: scale(1.2);
+
 }
 
 #footer h1{
@@ -363,6 +424,8 @@ footer{
 
 .footer-content{
     padding: 120px 0;
+    transition: all 1s;
+
 }
 
 .link{
@@ -373,7 +436,15 @@ footer{
     display: flex;
     gap: 40px;
     justify-content: center;
+    transition: all 1s;
+
     
+}
+
+.hover-link:hover{
+    color: #00FF88;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -432,14 +503,8 @@ footer{
         transform: scale(0.70);
   }
 
-  /* hero buttons */
-   .hero-btn{
-        /* flex-direction: column;
-        gap: 12px; */
-  }
 
     .hero-btn button{
-        /* width: 100%; */
         justify-content: center;
   }
 
@@ -497,12 +562,6 @@ footer{
   }
   
   
-
-  /* host section */
-  .chalange{
-
-  }
-
   .chalange-card{
     flex-direction: column;
     text-align: center;
@@ -533,6 +592,7 @@ footer{
     gap: 40px;
     margin: 0;
     padding: 24px 72px;
+    cursor: pointer;
   }
 
   .link span i{
@@ -540,6 +600,7 @@ footer{
     font-size: 20px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 }
 
